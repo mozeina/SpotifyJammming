@@ -1,0 +1,9 @@
+
+.background{
+   width: 100%;
+   height: 150vh;
+   background-image: url('../images/musicimg.jpeg') ;
+   background-position: bottom;
+   background-size: cover;
+   filter: brightness(.4);
+}
