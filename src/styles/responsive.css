@@ -1,0 +1,133 @@
+
+@media screen and (max-width: 356px){
+    .title{
+      font-size: 3rem;
+    }  
+    .searchForm input{
+      display: block;
+      width: 90%;
+      margin: 20px auto;
+      font-size: 1rem;
+    }
+    main {
+      top: 300px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+   
+    .searchResults{
+      width: 90%;
+      position: static;
+      display: block;
+      margin: 0 auto;
+    }
+    .playlist{
+      width:90%;
+      position: static;
+      display: block;
+      margin: 30px auto;
+    }
+    
+    .playlistStyle{
+        font-size: .8rem;
+        margin: 30px auto;
+        width: 90%;
+    }
+    .resultsStyle{
+        font-size: .8rem;
+        margin: 30px auto;
+        width: 90%;
+        padding: 10px;
+        
+    }
+    .imgStyle{
+        margin: auto 5px;
+        width: 40%;
+        height: 100px;
+        
+    }
+    .imgStyle2{
+        margin: auto 15px;
+        width: 40%;
+        height: 100px;
+    }
+    .button-68{
+        padding: 5px 10px;
+    }
+    .lineheight{
+        line-height: 1.5;
+    }
+  }
+
+@media screen and (max-width: 700px){
+  .searchForm > *{
+    margin: 20px 5px;
+  }
+  .searchForm  input{
+    width: 65%;
+    margin-right: 20px;
+  } 
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchResults{
+    top: 250px;
+    position: relative;
+    width: 90%;
+
+  }
+  .playlist{
+    width: 90%;
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .imgStyle, .imgStyle2{
+    height: auto;
+    margin: auto 20px;
+  }
+  .resultsStyle, .playlistStyle{
+    font-size: 125%;
+  }
+  .background{
+    height: 300vh;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1591px){
+  .searchForm input {
+    width: 40%;
+  }
+  .playlist{
+    width: 45%;
+    left: 52%
+  }
+  .searchResults{
+    width: 45%;
+    left: 3%;
+  }
+  .imgStyle, .imgStyle2{
+    width: auto;
+    height: 150px;
+  }
+  .resultsStyle{
+    font-size: 150%;
+  }
+    
+  }
+
+  
+@media screen and (max-width: 1591px){
+  .track{
+    display: none;
+  }
+  .tracklist{
+    display: none;
+  }
+
+}
