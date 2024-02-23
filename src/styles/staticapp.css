@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'montserrat', sans-serif;
 }
 .background{
    width: 100%;
@@ -83,10 +84,9 @@ nav{
 .track{
   position: absolute;
   width: 350px;
-  height: 350px;
+  height: 850px;
   right: 7%;
-  background-color: white;
-  opacity: .7;
+  background-color: rgba(255, 255, 255, .7);
   border-radius: 3px;
   top: 350px;
 }
@@ -236,6 +236,7 @@ nav{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 #save:hover {
@@ -310,7 +311,7 @@ nav{
 
 
 
-.playlist:-webkit-scrollbar-track, .searchResults::-webkit-scrollbar-track
+.playlist:-webkit-scrollbar-track, .searchResults::-webkit-scrollbar-track, .track::-webkit-scrollbar-track, .existing::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, .7);
   background-color: black;
@@ -318,14 +319,14 @@ nav{
 
 }
 
-.playlist::-webkit-scrollbar, .searchResults::-webkit-scrollbar
+.playlist::-webkit-scrollbar, .searchResults::-webkit-scrollbar, .track::-webkit-scrollbar, .existing::-webkit-scrollbar
 {
   width: 10px;
   background-color: rgba(255, 255, 255, 0);
   
 }
 
-.playlist::-webkit-scrollbar-thumb, .searchResults::-webkit-scrollbar-thumb
+.playlist::-webkit-scrollbar-thumb, .searchResults::-webkit-scrollbar-thumb, .track::-webkit-scrollbar-thumb, .existing::-webkit-scrollbar-thumb
 {
   background-color: #807c7c;
   border: 1px solid #807c7c;
@@ -353,6 +354,88 @@ nav{
   z-index: 1;
   padding: 20px;
 }
+
 .playlistStyle > * {
   font-family: 'Montserrat', sans-serif;
+}
+
+.existing{
+  background-color: rgb(121, 15, 15);
+  width: 95%;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+  position: relative;
+  color: rgb(7, 5, 5);
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+.existing:hover{
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+}
+
+.track{
+  overflow-y: scroll;
+}
+
+.existing p{
+  font-size: 1.2rem;
+  margin: auto 0;
+  margin-right: 20px;
+  
+}
+
+.existingImg{
+  width: 30%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.bi-copy{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.bi-copy:hover{
+  color: gray;
+}
+
+.bi-copy:active{
+  color: darkgray;
+}
+
+.bi-copy:hover::after{
+  content: 'Copy';
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  padding: 10px 10px;
+  background-color: white;
+  color: black;
+}
+
+.copy{
+  visibility: hidden;
+  background-color: white;
+  padding: 3px 6px;
+  font-size: .5rem;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  top: 3px;
+  border-radius: 5px;
 }

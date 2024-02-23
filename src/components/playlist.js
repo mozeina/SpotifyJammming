@@ -7,8 +7,9 @@ function Playlist(props){
     }
     return(
         <>
-            <input style={{fontSize: "1.8rem", margin: 10, fontFamily: '"Montserrat", sans-serif', fontWeight: 700, width: '92%', backgroundColor: "rgba(255,255,255,.5)", overflowX: 'hidden'}} 
-            onChange={handleNameChangeEvent} value={props.playlistName} id='playlistName'/>
+            <input style={{fontSize: "1.8rem", margin: 10, fontFamily: '"Montserrat", sans-serif', 
+            fontWeight: 700, width: '92%', backgroundColor: "rgba(255,255,255,.5)", overflowX: 'hidden'}}
+            onChange={handleNameChangeEvent} value={props.playlistName} id='playlistName' type='text' />
             {props.playlist.map((track, index) => {
                 return (
                     <div className='playlistStyle' key={index} style={{display: 'flex'}}>
