@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import StaticApp from './components/StaticApp'; 
 import React, {useState, useEffect} from 'react';
@@ -84,28 +84,13 @@ function App() {
       url += '&client_id=' + encodeURIComponent(client_id);
       url += '&scope=' + encodeURIComponent(scope);
       url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
-      url += `&state=${encodeURIComponent(scope)}`;
+      url += `&state=${encodeURIComponent(state)}`;
 
       // Redirect only if there's no access token in the URL
       window.location.href = url; 
 
     } else {
       setAccessTokenState(accessToken);
-      // fetch('https://api.spotify.com/v1/me', {
-      //   method: "GET",
-      //   headers: {
-      //     'Authorization': `Bearer ${accessToken}`,
-      //     'Content-Type': 'application/json'
-      //   }
-      // }).then(response => {
-      //   if (!response.ok){
-      //     console.log(`something went wrong big man ${response}`);
-      //     return;
-      //   }
-      //   return response.json();
-      // }).then(data => {
-      //   console.log(data)
-      // });
       async function awaitID() {
       try{
         let response = await fetch('https://api.spotify.com/v1/me', {
@@ -134,7 +119,7 @@ function App() {
     // console.log(accessToken, expiresIn);  
 
     
-   
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array means this runs once on mount
 
   // fetch(url, {
