@@ -77,7 +77,7 @@ function App() {
     if (!accessToken || isExpired()) {
       const state = generateRandomString(16);
       const client_id = 'b66d5aa0b11d44239a138cf284c7a568'; // Your Spotify Client ID
-      const redirect_uri = 'http://localhost:3000/'; // Your redirect URI
+      const redirect_uri = 'https://idyllic-treacle-a64a53.netlify.app/'; // Your redirect URI
       const scope = 'user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative'; // The scopes you need
       let url = 'https://accounts.spotify.com/authorize';
       url += '?response_type=token';
