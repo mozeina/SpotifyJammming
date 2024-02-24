@@ -13,7 +13,7 @@ function Playlist(props){
             {props.playlist.map((track, index) => {
                 return (
                     <div className='playlistStyle' key={index} style={{display: 'flex'}}>
-                        <img src={track.album.images[0].url} className='imgStyle2' alt='album-image'/>
+                        <img src={track.album.images[0].url} className='imgStyle2' alt='album'/>
                         <div style={{marginTop: 30}} className='lineheight'>
                             <p>{track.name}</p>
                             <p>{track.artists[0].name}</p>

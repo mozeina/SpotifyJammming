@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../styles/staticapp.css';
 import CopyButton from './copybutton';
 
@@ -57,7 +57,7 @@ function ExistingPlaylists(props) {
                 }
             return (
                 <div className='existing flex' onClick={ViewExistingPlaylist} data-key={index} >
-                    <img src={src} className='existingImg' alt='existing_playlist_images' />
+                    <img src={src} className='existingImg' alt='existing_playlist' />
                     <p>{playlist.name}</p>  
                     <CopyButton url={playlist.external_urls.spotify}/>    
                 </div>
