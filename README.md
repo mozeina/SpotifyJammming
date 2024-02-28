@@ -4,3 +4,6 @@
 #### RECENTLY IMPLEMENTED: 
 1. If playlist has same name as existing playlist it will save to that playlist.
 2. Copy playlist button.
+#### TO DO LIST:
+1. Include accessibility.
+2. Remove song(s) from existing playlist feature.
